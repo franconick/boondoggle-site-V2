@@ -1,50 +1,136 @@
-:root {
-    --max-page-width: 1920px;
-    --max-page-height: 1080px;
-}
-
 .home-container {
+  max-width: 2560px;
+  max-height: 1440px;
   width: 100%;
-  min-height: 100vh;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.home-content {
-  position: relative;
+@media (max-width: 2560px) {
+  .home-container {
+    width: 100vw;
+  }
+}
+
+@media (max-height: 1440px) {
+  .home-container {
+    max-height: 100vh;
+  }
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
 
-.character-image {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.background-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.character-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
 }
 
 .character-image img {
-    width: auto;
-    height: 2000px;
-    z-index: 2;
-    transform: translate(-275px,400px);
+  max-width: auto;
+  max-height: 2000px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transform: translate(-300px,455px);
+  animation: slideUpCharacter 0s ease-in-out, float 5s ease-in-out 0.8s infinite;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: screen;
+}
+
+.overlay-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
 
 }
-.background-overlay{
-    position: absolute;
+
+.title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+  font-size: clamp(3rem, 9vw, 10rem);
+  font-weight: 1000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 4;
+  mix-blend-mode: exclusion;
+  white-space: nowrap;
+  /*animation: slideUp 0.8s ease-in-out;*/
 }
-.background-overlay img{
-    width: 1920px;
-    height: 1080px;
-    transform: translate(0px,-244px);
-    z-index: 3;
-    mix-blend-mode: screen;
+
+.button-container {
+  position: absolute;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(clamp(-20%, 15%, 50%), calc(-10% + clamp(2rem, 4vw, 5rem)));
+  z-index: 4;
+  display: flex;
+  justify-content: flex-start;
+  mix-blend-mode: exclusion;
 }
+
+@keyframes slideUp {
+  from {
+    transform: translate(-35%, 150%);
+  }
+  to {
+    transform: translate(-35%, -50%);
+  }
+}
+
+@keyframes slideUpCharacter {
+  from {
+    transform: translate(-300px, 150%);
+  }
+  to {
+    transform: translate(-300px, 455px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-300px, 455px);
+  }
+  50% {
+    transform: translate(-300px, 435px);
+  }
+}
+
