@@ -12,6 +12,7 @@
   border-radius: 20px;
   z-index: 10;
   position: relative;
+  border: 1px solid color-mix(in oklab, white 12%, transparent);
 }
 
 .navbar-logo {
@@ -44,5 +45,7 @@
 
 .navbar-link:hover {
   opacity: 0.7;
+
+
 }
 

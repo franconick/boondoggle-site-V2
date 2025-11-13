@@ -1,0 +1,13 @@
+.card-container{
+    height: 300px;
+    width: auto;
+    max-height: 600px;
+    background-color: #18181a;
+    border-radius: 6px;
+}
+
+.channel-info{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
