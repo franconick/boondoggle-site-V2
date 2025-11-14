@@ -1,15 +1,12 @@
 import './video-card.css'
-import axios from 'axios';
-import React, {useState,useEffect} from 'react';
 
-
-function VideoCard({videoLink = ""}){
-    let channelName = "channel name"
-    let videoTitle = "title here"
+function VideoCard({videoTitle,thumbnailImage,channelName,channelImage,viewCount,videoLink}){
     return(
-        <div className='card-container'>
+        <div className='card'>
+            <a href={videoLink} target="_blank" style={{ textDecoration: 'none' }}>
+            <div className='card-container'>
             <div className='thumbnail-image'>
-                <img src="" alt="thumbnail" />
+                <img src={thumbnailImage} alt="thumbnail" />
             </div>
             <div className='card-info'>
                 <div className='video-title'>
@@ -17,15 +14,20 @@ function VideoCard({videoLink = ""}){
                 </div>
                 <div className='channel-info'>
                     <div className='channel-pfp'>
-                        <img src="" alt="channel-profile-image" />
+                        <img src={channelImage} alt="channel-profile-image" />
                     </div>
                     <div className='channel-name'>
                         <p>{channelName}</p>
                     </div>
                 </div>
-                <div className='view-count'></div>
+                <div className='view-count'>
+                    {/*<p>{viewCount + " views"}</p>*/}
+                </div>
             </div>
+            </div>
+        </a>
         </div>
+        
     );
 
 }

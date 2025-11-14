@@ -8,6 +8,8 @@
   font-weight: 550;
   cursor: pointer;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
   box-shadow: 0 0 clamp(8px, 1.5vw, 16px) rgb(255, 224, 101);
   transition: box-shadow 0.3s ease;
 }

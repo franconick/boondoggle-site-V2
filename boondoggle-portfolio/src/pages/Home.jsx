@@ -22,7 +22,7 @@ function Home(){
             </div>
             <h1 className="title-text">BOONDOGGLE</h1>
             <div className="button-container">
-                <LinkButton text="View work" />
+                <LinkButton text="View work" to="/thumbnails" />
             </div>
         </div>
     );

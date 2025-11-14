@@ -1,14 +1,7 @@
-import Home from './pages/Home.jsx'
-import Thumbnails from './pages/Thumbnails.jsx'
-
+// App.jsx is no longer needed for routing
+// Routing is now handled in main.jsx with RouterProvider
 function App() {
-  return (
-    <div>
-      <Home/>
-      <Thumbnails/>
-    </div>
-  
-  )
+  return null
 }
 
 export default App
