@@ -1,8 +1,10 @@
+import './Banners.css'
 function Other() {
   return (
-    <div>
-      <h1>Other</h1>
-      <p>Other page content coming soon...</p>
+    <div className="Banners-container">
+      <div className="Banners-conent">
+        <h1>UNDER CONSTRUCTION...</h1>
+      </div>
     </div>
   )
 }

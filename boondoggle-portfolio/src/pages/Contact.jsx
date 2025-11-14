@@ -1,8 +1,10 @@
+import './Banners.css'
 function Contact() {
   return (
-    <div>
-      <h1>Contact</h1>
-      <p>Contact page content coming soon...</p>
+    <div className="Banners-container">
+      <div className="Banners-conent">
+        <h1>UNDER CONSTRUCTION...</h1>
+      </div>
     </div>
   )
 }

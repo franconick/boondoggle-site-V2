@@ -27,13 +27,15 @@ function Thumbnails(){
                     thumbnailImage={getImageUrl('glocktober13fix.webp')}
                     channelName={"shadx"}
                     channelImage={getImagePFP('shadexpfp.jpg')}
-                    viewCount={"123,000,000"}/>
+                    viewCount={"123,000,000"}
+                    videoLink={"https://www.youtube.com/watch?v=Q0tF3LwIRtc"}/>
                     <VideoCard
                     videoTitle={"Kizaru vs Big Mom is...."}
                     thumbnailImage={getImageUrl('shadx1.jpg')}
                     channelName={"shadx"}
                     channelImage={getImagePFP('shadexpfp.jpg')}
-                    viewCount={"123,000,000"}/>
+                    viewCount={"123,000,000"}
+                    videoLink={"https://www.youtube.com/watch?v=ou85R18vWVo"}/>
                 </div>
                 <ThumbnailContainer 
                 image1={getImageUrl('obsidianshinobi9.webp')} 
@@ -74,7 +76,7 @@ function Thumbnails(){
                     channelName={"StanleyMOV Live"}
                     channelImage={'https://yt3.googleusercontent.com/Mtgkiu0sbz_QZek1EgNK7s4zkR0xjb_tHYpd_SWtvQND9SflOtPofKJiPUkQ1awK_sqZi1z58g=s160-c-k-c0x00ffffff-no-rj'}
                     viewCount={"123,000,000"}
-                    videoLink={'https://www.youtube.com/watch?v=JXu0PdV84oo'}/>
+                    videoLink={'https://www.youtube.com/watch?v=mC84EI0Bodw'}/>
                     <VideoCard
                     videoTitle={"What If Dragon ball Fighterz Was Jojo Instead?!"}
                     thumbnailImage={getImageUrl('infernasu2V2.webp')}

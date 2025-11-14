@@ -21,8 +21,8 @@
 .thumbnail-card{
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 12px;
     margin-bottom: 12px;
-
 }
 
